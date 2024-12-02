@@ -51,8 +51,8 @@ const Home = () => {
     }
 
   return (
-    <div className="text-center px-3 sm:px-4 md:px-10 lg:px-20 mx-auto">
-      <h1 className='text-2xl sm:text-3xl md:text-4xl font-serif pt-10 pb-6'>Find Your Country Here</h1>
+    <div className="text-center px-3 sm:px-4 md:px-10 lg:px-20 mx-auto bg-gradient-to-r from-purple-950 to-purple-600 bg-opacity-90">
+      <h1 className='text-2xl text-white tracking-wider sm:text-3xl md:text-4xl font-serif pt-10 pb-6'>Find Your Country Here</h1>
       <Search onSearch={handleSearch} />
       {isLoading && <p className='text-gray-700'>Loading...</p>}
       {error && <p className="text-red-500 tracking-wider">{error+" :)"}</p>}
